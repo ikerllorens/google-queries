@@ -1,0 +1,16 @@
+<p>
+  search-home works!
+</p>
+
+Want to search for:  <input type="text" (keyup)="searchInput($event)"><br>
+
+<table>
+  <tr *ngFor="let res of Results">
+    <td>
+      {{res.name}}
+    </td>
+    <td>
+      {{res.description}}
+    </td>
+  </tr>
+</table>
